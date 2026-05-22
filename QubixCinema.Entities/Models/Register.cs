@@ -8,6 +8,5 @@ namespace QubixCinema.Entities.Models
         public decimal Amount { get; set; }
         public string Description { get; set; }
         public DateTime TransactionDate { get; set; }
-        public int MyProperty { get; set; }
     }
 }

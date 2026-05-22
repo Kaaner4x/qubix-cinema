@@ -29,57 +29,57 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem4 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem5 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem6 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem7 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem8 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem9 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem11 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem12 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem13 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip14 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem14 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip15 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem15 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip16 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem16 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip17 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem17 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip18 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem18 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip19 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem19 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip20 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem20 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip21 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem21 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip22 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem22 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip23 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem23 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip24 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem24 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip25 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem25 = new DevExpress.Utils.ToolTipItem();
             this.ribbon_control = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.ribbon_page_movies = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.bar_button_list_movies = new DevExpress.XtraBars.BarButtonItem();
             this.bar_button_add_movies = new DevExpress.XtraBars.BarButtonItem();
             this.bar_button_update_movies = new DevExpress.XtraBars.BarButtonItem();
             this.bar_button_delete_movies = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbon_page_checkout = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.bar_button_reports = new DevExpress.XtraBars.BarButtonItem();
             this.bar_button_take_payment = new DevExpress.XtraBars.BarButtonItem();
             this.bar_button_close_day = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbon_page_customers = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.bar_button_list_customers = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.bar_button_add_customers = new DevExpress.XtraBars.BarButtonItem();
             this.bar_button_update_customers = new DevExpress.XtraBars.BarButtonItem();
             this.bar_button_delete_customers = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbon_page_reservations = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.bar_button_view_seats = new DevExpress.XtraBars.BarButtonItem();
             this.bar_button_book_seat = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbon_page_movies = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbon_page_checkout = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbon_page_customers = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbon_page_reservations = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon_control)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,11 +112,196 @@
             this.ribbon_control.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2007;
             this.ribbon_control.Size = new System.Drawing.Size(1170, 177);
             // 
+            // bar_button_list_movies
+            // 
+            this.bar_button_list_movies.Caption = "List";
+            this.bar_button_list_movies.Id = 1;
+            this.bar_button_list_movies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_list_movies.ImageOptions.Image")));
+            this.bar_button_list_movies.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_list_movies.ImageOptions.LargeImage")));
+            this.bar_button_list_movies.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_list_movies.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_list_movies.LargeWidth = 100;
+            this.bar_button_list_movies.Name = "bar_button_list_movies";
+            toolTipItem1.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem1.Appearance.BorderColor = System.Drawing.Color.Black;
+            toolTipItem1.Appearance.Options.UseBorderColor = true;
+            toolTipItem1.Text = "Lists all the movies";
+            superToolTip1.Items.Add(toolTipItem1);
+            this.bar_button_list_movies.SuperTip = superToolTip1;
+            // 
+            // bar_button_add_movies
+            // 
+            this.bar_button_add_movies.Caption = "Add";
+            this.bar_button_add_movies.Id = 2;
+            this.bar_button_add_movies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_add_movies.ImageOptions.Image")));
+            this.bar_button_add_movies.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_add_movies.ImageOptions.LargeImage")));
+            this.bar_button_add_movies.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_add_movies.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_add_movies.LargeWidth = 100;
+            this.bar_button_add_movies.Name = "bar_button_add_movies";
+            toolTipItem2.Text = "You can add a new movie";
+            superToolTip2.Items.Add(toolTipItem2);
+            this.bar_button_add_movies.SuperTip = superToolTip2;
+            // 
+            // bar_button_update_movies
+            // 
+            this.bar_button_update_movies.Caption = "Update";
+            this.bar_button_update_movies.Id = 3;
+            this.bar_button_update_movies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_update_movies.ImageOptions.Image")));
+            this.bar_button_update_movies.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_update_movies.ImageOptions.LargeImage")));
+            this.bar_button_update_movies.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_update_movies.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_update_movies.LargeWidth = 100;
+            this.bar_button_update_movies.Name = "bar_button_update_movies";
+            toolTipItem3.Text = "You can edit a movie";
+            superToolTip3.Items.Add(toolTipItem3);
+            this.bar_button_update_movies.SuperTip = superToolTip3;
+            // 
+            // bar_button_delete_movies
+            // 
+            this.bar_button_delete_movies.Caption = "Delete";
+            this.bar_button_delete_movies.Id = 4;
+            this.bar_button_delete_movies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_delete_movies.ImageOptions.Image")));
+            this.bar_button_delete_movies.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_delete_movies.ImageOptions.LargeImage")));
+            this.bar_button_delete_movies.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_delete_movies.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_delete_movies.LargeWidth = 100;
+            this.bar_button_delete_movies.Name = "bar_button_delete_movies";
+            toolTipItem4.Text = "You can delete a movie";
+            superToolTip4.Items.Add(toolTipItem4);
+            this.bar_button_delete_movies.SuperTip = superToolTip4;
+            // 
+            // bar_button_reports
+            // 
+            this.bar_button_reports.Caption = "POS Reports";
+            this.bar_button_reports.Id = 6;
+            this.bar_button_reports.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_reports.ImageOptions.Image")));
+            this.bar_button_reports.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_reports.ImageOptions.LargeImage")));
+            this.bar_button_reports.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_reports.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_reports.LargeWidth = 100;
+            this.bar_button_reports.Name = "bar_button_reports";
+            toolTipItem5.Text = "You can review all reports related to cash register transactions";
+            superToolTip5.Items.Add(toolTipItem5);
+            this.bar_button_reports.SuperTip = superToolTip5;
+            // 
+            // bar_button_take_payment
+            // 
+            this.bar_button_take_payment.Caption = "Take Payment";
+            this.bar_button_take_payment.Id = 7;
+            this.bar_button_take_payment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_take_payment.ImageOptions.Image")));
+            this.bar_button_take_payment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_take_payment.ImageOptions.LargeImage")));
+            this.bar_button_take_payment.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_take_payment.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_take_payment.LargeWidth = 100;
+            this.bar_button_take_payment.Name = "bar_button_take_payment";
+            toolTipItem6.Text = "You can collect the amount the customer owes";
+            superToolTip6.Items.Add(toolTipItem6);
+            this.bar_button_take_payment.SuperTip = superToolTip6;
+            // 
+            // bar_button_close_day
+            // 
+            this.bar_button_close_day.Caption = "Close The Day";
+            this.bar_button_close_day.Id = 8;
+            this.bar_button_close_day.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_close_day.ImageOptions.Image")));
+            this.bar_button_close_day.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_close_day.ImageOptions.LargeImage")));
+            this.bar_button_close_day.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_close_day.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_close_day.LargeWidth = 100;
+            this.bar_button_close_day.Name = "bar_button_close_day";
+            toolTipItem7.Text = "You can close the day";
+            superToolTip7.Items.Add(toolTipItem7);
+            this.bar_button_close_day.SuperTip = superToolTip7;
+            // 
+            // bar_button_list_customers
+            // 
+            this.bar_button_list_customers.Caption = "List";
+            this.bar_button_list_customers.Id = 9;
+            this.bar_button_list_customers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_list_customers.ImageOptions.Image")));
+            this.bar_button_list_customers.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_list_customers.ImageOptions.LargeImage")));
+            this.bar_button_list_customers.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_list_customers.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_list_customers.LargeWidth = 100;
+            this.bar_button_list_customers.Name = "bar_button_list_customers";
+            toolTipItem8.Text = "Lists all the customers";
+            superToolTip8.Items.Add(toolTipItem8);
+            this.bar_button_list_customers.SuperTip = superToolTip8;
+            // 
+            // bar_button_add_customers
+            // 
+            this.bar_button_add_customers.Caption = "Add";
+            this.bar_button_add_customers.Id = 10;
+            this.bar_button_add_customers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_add_customers.ImageOptions.Image")));
+            this.bar_button_add_customers.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_add_customers.ImageOptions.LargeImage")));
+            this.bar_button_add_customers.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_add_customers.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_add_customers.LargeWidth = 100;
+            this.bar_button_add_customers.Name = "bar_button_add_customers";
+            toolTipItem9.Text = "You can add a new customer";
+            superToolTip9.Items.Add(toolTipItem9);
+            this.bar_button_add_customers.SuperTip = superToolTip9;
+            // 
+            // bar_button_update_customers
+            // 
+            this.bar_button_update_customers.Caption = "Update";
+            this.bar_button_update_customers.Id = 11;
+            this.bar_button_update_customers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_update_customers.ImageOptions.Image")));
+            this.bar_button_update_customers.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_update_customers.ImageOptions.LargeImage")));
+            this.bar_button_update_customers.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_update_customers.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_update_customers.LargeWidth = 100;
+            this.bar_button_update_customers.Name = "bar_button_update_customers";
+            toolTipItem10.Text = "You can edit a customer";
+            superToolTip10.Items.Add(toolTipItem10);
+            this.bar_button_update_customers.SuperTip = superToolTip10;
+            // 
+            // bar_button_delete_customers
+            // 
+            this.bar_button_delete_customers.Caption = "Delete";
+            this.bar_button_delete_customers.Id = 12;
+            this.bar_button_delete_customers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_delete_customers.ImageOptions.Image")));
+            this.bar_button_delete_customers.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_delete_customers.ImageOptions.LargeImage")));
+            this.bar_button_delete_customers.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_delete_customers.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_delete_customers.LargeWidth = 100;
+            this.bar_button_delete_customers.Name = "bar_button_delete_customers";
+            toolTipItem11.Text = "You can delete a customer";
+            superToolTip11.Items.Add(toolTipItem11);
+            this.bar_button_delete_customers.SuperTip = superToolTip11;
+            // 
+            // bar_button_view_seats
+            // 
+            this.bar_button_view_seats.Caption = "View Seats";
+            this.bar_button_view_seats.Id = 13;
+            this.bar_button_view_seats.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_view_seats.ImageOptions.Image")));
+            this.bar_button_view_seats.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_view_seats.ImageOptions.LargeImage")));
+            this.bar_button_view_seats.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_view_seats.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_view_seats.LargeWidth = 150;
+            this.bar_button_view_seats.Name = "bar_button_view_seats";
+            toolTipItem12.Text = "You can check the current seats";
+            superToolTip12.Items.Add(toolTipItem12);
+            this.bar_button_view_seats.SuperTip = superToolTip12;
+            // 
+            // bar_button_book_seat
+            // 
+            this.bar_button_book_seat.Caption = "Book A Seat";
+            this.bar_button_book_seat.Id = 14;
+            this.bar_button_book_seat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_button_book_seat.ImageOptions.Image")));
+            this.bar_button_book_seat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bar_button_book_seat.ImageOptions.LargeImage")));
+            this.bar_button_book_seat.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bar_button_book_seat.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.bar_button_book_seat.LargeWidth = 150;
+            this.bar_button_book_seat.Name = "bar_button_book_seat";
+            toolTipItem13.Text = "You can make a new reservation";
+            superToolTip13.Items.Add(toolTipItem13);
+            this.bar_button_book_seat.SuperTip = superToolTip13;
+            // 
             // ribbon_page_movies
             // 
             this.ribbon_page_movies.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
-            this.ribbon_page_movies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.ImageOptions.Image")));
+            this.ribbon_page_movies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbon_page_movies.ImageOptions.Image")));
             this.ribbon_page_movies.Name = "ribbon_page_movies";
             this.ribbon_page_movies.Text = "MOVIES";
             // 
@@ -129,70 +314,11 @@
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "All operations related to movies           ";
             // 
-            // bar_button_list_movies
-            // 
-            this.bar_button_list_movies.Caption = "List";
-            this.bar_button_list_movies.Id = 1;
-            this.bar_button_list_movies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.bar_button_list_movies.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.bar_button_list_movies.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_list_movies.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_list_movies.LargeWidth = 100;
-            this.bar_button_list_movies.Name = "bar_button_list_movies";
-            toolTipItem13.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem13.Appearance.BorderColor = System.Drawing.Color.Black;
-            toolTipItem13.Appearance.Options.UseBorderColor = true;
-            toolTipItem13.Text = "Lists all the movies";
-            superToolTip13.Items.Add(toolTipItem13);
-            this.bar_button_list_movies.SuperTip = superToolTip13;
-            // 
-            // bar_button_add_movies
-            // 
-            this.bar_button_add_movies.Caption = "Add";
-            this.bar_button_add_movies.Id = 2;
-            this.bar_button_add_movies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image1")));
-            this.bar_button_add_movies.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage1")));
-            this.bar_button_add_movies.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_add_movies.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_add_movies.LargeWidth = 100;
-            this.bar_button_add_movies.Name = "bar_button_add_movies";
-            toolTipItem14.Text = "You can add a new movie";
-            superToolTip14.Items.Add(toolTipItem14);
-            this.bar_button_add_movies.SuperTip = superToolTip14;
-            // 
-            // bar_button_update_movies
-            // 
-            this.bar_button_update_movies.Caption = "Update";
-            this.bar_button_update_movies.Id = 3;
-            this.bar_button_update_movies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.bar_button_update_movies.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.bar_button_update_movies.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_update_movies.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_update_movies.LargeWidth = 100;
-            this.bar_button_update_movies.Name = "bar_button_update_movies";
-            toolTipItem15.Text = "You can edit a movie";
-            superToolTip15.Items.Add(toolTipItem15);
-            this.bar_button_update_movies.SuperTip = superToolTip15;
-            // 
-            // bar_button_delete_movies
-            // 
-            this.bar_button_delete_movies.Caption = "Delete";
-            this.bar_button_delete_movies.Id = 4;
-            this.bar_button_delete_movies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.bar_button_delete_movies.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
-            this.bar_button_delete_movies.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_delete_movies.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_delete_movies.LargeWidth = 100;
-            this.bar_button_delete_movies.Name = "bar_button_delete_movies";
-            toolTipItem16.Text = "You can delete a movie";
-            superToolTip16.Items.Add(toolTipItem16);
-            this.bar_button_delete_movies.SuperTip = superToolTip16;
-            // 
             // ribbon_page_checkout
             // 
             this.ribbon_page_checkout.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup5});
-            this.ribbon_page_checkout.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage2.ImageOptions.Image")));
+            this.ribbon_page_checkout.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbon_page_checkout.ImageOptions.Image")));
             this.ribbon_page_checkout.Name = "ribbon_page_checkout";
             this.ribbon_page_checkout.Text = "CHECKOUT";
             // 
@@ -204,53 +330,11 @@
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "All operations related to the cash register";
             // 
-            // bar_button_reports
-            // 
-            this.bar_button_reports.Caption = "POS Reports";
-            this.bar_button_reports.Id = 6;
-            this.bar_button_reports.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.bar_button_reports.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
-            this.bar_button_reports.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_reports.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_reports.LargeWidth = 100;
-            this.bar_button_reports.Name = "bar_button_reports";
-            toolTipItem17.Text = "You can review all reports related to cash register transactions";
-            superToolTip17.Items.Add(toolTipItem17);
-            this.bar_button_reports.SuperTip = superToolTip17;
-            // 
-            // bar_button_take_payment
-            // 
-            this.bar_button_take_payment.Caption = "Take Payment";
-            this.bar_button_take_payment.Id = 7;
-            this.bar_button_take_payment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.bar_button_take_payment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
-            this.bar_button_take_payment.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_take_payment.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_take_payment.LargeWidth = 100;
-            this.bar_button_take_payment.Name = "bar_button_take_payment";
-            toolTipItem18.Text = "You can collect the amount the customer owes";
-            superToolTip18.Items.Add(toolTipItem18);
-            this.bar_button_take_payment.SuperTip = superToolTip18;
-            // 
-            // bar_button_close_day
-            // 
-            this.bar_button_close_day.Caption = "Close The Day";
-            this.bar_button_close_day.Id = 8;
-            this.bar_button_close_day.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-            this.bar_button_close_day.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
-            this.bar_button_close_day.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_close_day.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_close_day.LargeWidth = 100;
-            this.bar_button_close_day.Name = "bar_button_close_day";
-            toolTipItem19.Text = "You can close the day";
-            superToolTip19.Items.Add(toolTipItem19);
-            this.bar_button_close_day.SuperTip = superToolTip19;
-            // 
             // ribbon_page_customers
             // 
             this.ribbon_page_customers.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup2});
-            this.ribbon_page_customers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage3.ImageOptions.Image")));
+            this.ribbon_page_customers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbon_page_customers.ImageOptions.Image")));
             this.ribbon_page_customers.Name = "ribbon_page_customers";
             this.ribbon_page_customers.Text = "Customers";
             // 
@@ -263,19 +347,20 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "All operations related to the customers";
             // 
-            // bar_button_list_customers
+            // ribbon_page_reservations
             // 
-            this.bar_button_list_customers.Caption = "List";
-            this.bar_button_list_customers.Id = 9;
-            this.bar_button_list_customers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
-            this.bar_button_list_customers.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
-            this.bar_button_list_customers.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_list_customers.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_list_customers.LargeWidth = 100;
-            this.bar_button_list_customers.Name = "bar_button_list_customers";
-            toolTipItem20.Text = "Lists all the customers";
-            superToolTip20.Items.Add(toolTipItem20);
-            this.bar_button_list_customers.SuperTip = superToolTip20;
+            this.ribbon_page_reservations.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup3});
+            this.ribbon_page_reservations.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbon_page_reservations.ImageOptions.Image")));
+            this.ribbon_page_reservations.Name = "ribbon_page_reservations";
+            this.ribbon_page_reservations.Text = "Reservations";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.bar_button_view_seats);
+            this.ribbonPageGroup3.ItemLinks.Add(this.bar_button_book_seat);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "All operations related to the reservations";
             // 
             // barButtonItem8
             // 
@@ -304,104 +389,18 @@
             this.barButtonItem10.LargeWidth = 100;
             this.barButtonItem10.Name = "barButtonItem10";
             // 
-            // bar_button_add_customers
-            // 
-            this.bar_button_add_customers.Caption = "Add";
-            this.bar_button_add_customers.Id = 10;
-            this.bar_button_add_customers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
-            this.bar_button_add_customers.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
-            this.bar_button_add_customers.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_add_customers.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_add_customers.LargeWidth = 100;
-            this.bar_button_add_customers.Name = "bar_button_add_customers";
-            toolTipItem21.Text = "You can add a new customer";
-            superToolTip21.Items.Add(toolTipItem21);
-            this.bar_button_add_customers.SuperTip = superToolTip21;
-            // 
-            // bar_button_update_customers
-            // 
-            this.bar_button_update_customers.Caption = "Update";
-            this.bar_button_update_customers.Id = 11;
-            this.bar_button_update_customers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
-            this.bar_button_update_customers.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
-            this.bar_button_update_customers.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_update_customers.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_update_customers.LargeWidth = 100;
-            this.bar_button_update_customers.Name = "bar_button_update_customers";
-            toolTipItem22.Text = "You can edit a customer";
-            superToolTip22.Items.Add(toolTipItem22);
-            this.bar_button_update_customers.SuperTip = superToolTip22;
-            // 
-            // bar_button_delete_customers
-            // 
-            this.bar_button_delete_customers.Caption = "Delete";
-            this.bar_button_delete_customers.Id = 12;
-            this.bar_button_delete_customers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
-            this.bar_button_delete_customers.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
-            this.bar_button_delete_customers.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_delete_customers.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_delete_customers.LargeWidth = 100;
-            this.bar_button_delete_customers.Name = "bar_button_delete_customers";
-            toolTipItem23.Text = "You can delete a customer";
-            superToolTip23.Items.Add(toolTipItem23);
-            this.bar_button_delete_customers.SuperTip = superToolTip23;
-            // 
-            // ribbon_page_reservations
-            // 
-            this.ribbon_page_reservations.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup3});
-            this.ribbon_page_reservations.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage4.ImageOptions.Image")));
-            this.ribbon_page_reservations.Name = "ribbon_page_reservations";
-            this.ribbon_page_reservations.Text = "Reservations";
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.bar_button_view_seats);
-            this.ribbonPageGroup3.ItemLinks.Add(this.bar_button_book_seat);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "All operations related to the reservations";
-            // 
-            // bar_button_view_seats
-            // 
-            this.bar_button_view_seats.Caption = "View Seats";
-            this.bar_button_view_seats.Id = 13;
-            this.bar_button_view_seats.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.Image")));
-            this.bar_button_view_seats.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.LargeImage")));
-            this.bar_button_view_seats.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_view_seats.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_view_seats.LargeWidth = 150;
-            this.bar_button_view_seats.Name = "bar_button_view_seats";
-            toolTipItem24.Text = "You can check the current seats";
-            superToolTip24.Items.Add(toolTipItem24);
-            this.bar_button_view_seats.SuperTip = superToolTip24;
-            // 
-            // bar_button_book_seat
-            // 
-            this.bar_button_book_seat.Caption = "Book A Seat";
-            this.bar_button_book_seat.Id = 14;
-            this.bar_button_book_seat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.ImageOptions.Image")));
-            this.bar_button_book_seat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.ImageOptions.LargeImage")));
-            this.bar_button_book_seat.ItemAppearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.bar_button_book_seat.ItemAppearance.Hovered.Options.UseBackColor = true;
-            this.bar_button_book_seat.LargeWidth = 150;
-            this.bar_button_book_seat.Name = "bar_button_book_seat";
-            toolTipItem25.Text = "You can make a new reservation";
-            superToolTip25.Items.Add(toolTipItem25);
-            this.bar_button_book_seat.SuperTip = superToolTip25;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1170, 693);
             this.Controls.Add(this.ribbon_control);
-            this.LookAndFeel.SkinMaskColor = System.Drawing.Color.Empty;
-            this.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.Empty;
             this.LookAndFeel.SkinName = "The Bezier";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Qubix Cinema";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon_control)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+﻿using QubixCinema.DataAccess;
+using System;
+using System.Data.Entity;
 
 namespace QubixCinema
 {
@@ -17,5 +12,16 @@ namespace QubixCinema
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // Veri tabanı mevcut değilse oluşturur. Mevcut ise hiçbir şey yapmaz,
+            // mevcut veri tabanına dokunmaz
+            Database.SetInitializer(new CreateDatabaseIfNotExists<QubixCinemaContext>());
+
+            using (var database = new QubixCinemaContext())
+            {
+                database.Database.Initialize(force: true);
+            }
+        }
     }
 }
