@@ -44,6 +44,9 @@
     <Reference Include="DevExpress.XtraEditors.v25.2" />
     <Reference Include="DevExpress.Printing.v25.2.Core" />
     <Reference Include="DevExpress.Drawing.v25.2" />
+    <Reference Include="DevExpress.XtraGrid.v25.2, Version=25.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v25.2, Version=25.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v25.2, Version=25.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -69,10 +72,46 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MovieForms\AddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieForms\AddMovie.Designer.cs">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieForms\DeleteMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieForms\DeleteMovie.Designer.cs">
+      <DependentUpon>DeleteMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieForms\MovieList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieForms\MovieList.Designer.cs">
+      <DependentUpon>MovieList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieForms\UpdateMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieForms\UpdateMovie.Designer.cs">
+      <DependentUpon>UpdateMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieForms\AddMovie.resx">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieForms\DeleteMovie.resx">
+      <DependentUpon>DeleteMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieForms\MovieList.resx">
+      <DependentUpon>MovieList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieForms\UpdateMovie.resx">
+      <DependentUpon>UpdateMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,6 +141,10 @@
     <ProjectReference Include="..\QubixCinema.DataAccess\QubixCinema.DataAccess.csproj">
       <Project>{0891b2bf-9a09-4ada-a491-4720972c7dab}</Project>
       <Name>QubixCinema.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QubixCinema.Entities\QubixCinema.Entities.csproj">
+      <Project>{6999D49E-59B7-49C6-BC45-31E562DE5EAC}</Project>
+      <Name>QubixCinema.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

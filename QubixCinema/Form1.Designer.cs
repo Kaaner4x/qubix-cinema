@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
@@ -80,7 +81,9 @@
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon_control)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon_control
@@ -128,6 +131,7 @@
             toolTipItem1.Text = "Lists all the movies";
             superToolTip1.Items.Add(toolTipItem1);
             this.bar_button_list_movies.SuperTip = superToolTip1;
+            this.bar_button_list_movies.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_list_movies_ItemClick);
             // 
             // bar_button_add_movies
             // 
@@ -142,6 +146,7 @@
             toolTipItem2.Text = "You can add a new movie";
             superToolTip2.Items.Add(toolTipItem2);
             this.bar_button_add_movies.SuperTip = superToolTip2;
+            this.bar_button_add_movies.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_add_movies_ItemClick);
             // 
             // bar_button_update_movies
             // 
@@ -156,6 +161,7 @@
             toolTipItem3.Text = "You can edit a movie";
             superToolTip3.Items.Add(toolTipItem3);
             this.bar_button_update_movies.SuperTip = superToolTip3;
+            this.bar_button_update_movies.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_update_movies_ItemClick);
             // 
             // bar_button_delete_movies
             // 
@@ -170,6 +176,7 @@
             toolTipItem4.Text = "You can delete a movie";
             superToolTip4.Items.Add(toolTipItem4);
             this.bar_button_delete_movies.SuperTip = superToolTip4;
+            this.bar_button_delete_movies.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_delete_movies_ItemClick);
             // 
             // bar_button_reports
             // 
@@ -389,12 +396,17 @@
             this.barButtonItem10.LargeWidth = 100;
             this.barButtonItem10.Name = "barButtonItem10";
             // 
+            // xtraTabbedMdiManager
+            // 
+            this.xtraTabbedMdiManager.MdiParent = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1170, 693);
             this.Controls.Add(this.ribbon_control);
+            this.IsMdiContainer = true;
             this.LookAndFeel.SkinName = "The Bezier";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.Name = "Form1";
@@ -402,6 +414,7 @@
             this.Text = "Qubix Cinema";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon_control)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -434,6 +447,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.BarButtonItem bar_button_view_seats;
         private DevExpress.XtraBars.BarButtonItem bar_button_book_seat;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager;
     }
 }
 
