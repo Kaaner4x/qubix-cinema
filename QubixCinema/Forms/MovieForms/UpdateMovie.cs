@@ -1,5 +1,5 @@
-﻿using DevExpress.XtraEditors;
-using QubixCinema.DataAccess.Services;
+using DevExpress.XtraEditors;
+using QubixCinema.Business.Services;
 using QubixCinema.Entities.Models;
 using System;
 using System.Windows.Forms;
@@ -8,40 +8,45 @@ namespace QubixCinema.Forms.MovieForms
 {
     public partial class UpdateMovie : Form
     {
-        private readonly MovieService _movieService;
+        private MovieService _movieService;
 
         public UpdateMovie()
         {
             InitializeComponent();
             _movieService = new MovieService(new DataAccess.QubixCinemaContext());
+            numeric_runtime.Maximum = 1000;
         }
 
         private void UpdateMovie_Load(object sender, EventArgs e)
         {
-            var movies = _movieService.GetAllMovies();
+            try
+            {
+                var movies = _movieService.GetAllMovies();
 
-            combobox_movie.DataSource = movies;
-            combobox_movie.DisplayMember = "MovieName";
-            combobox_movie.ValueMember = "MovieId";
+                combobox_movie.DataSource = movies;
+                combobox_movie.DisplayMember = "MovieName";
+                combobox_movie.ValueMember = "MovieId";
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show($"Load Error: {ex.ToString()}");
+            }
         }
 
         private void combobox_movie_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (combobox_movie.SelectedItem == null)
-                return;
-
-            Movie chosenMovie = (Movie)combobox_movie.SelectedItem;
-            textedit_movie_name.Text = chosenMovie.MovieName;
-            textedit_genre.Text = chosenMovie.Genre;
-            numeric_runtime.Value = chosenMovie.Runtime;
-            dateedit_release_date.DateTime = chosenMovie.ReleaseDate;
+            if (combobox_movie.SelectedItem is Movie chosenMovie)
+            {
+                textedit_movie_name.Text = chosenMovie.MovieName;
+                textedit_genre.Text = chosenMovie.Genre;
+                numeric_runtime.Value = chosenMovie.Runtime;
+                dateedit_release_date.DateTime = chosenMovie.ReleaseDate;
+            }
         }
 
         private void button_update_Click(object sender, EventArgs e)
         {
-            Movie chosenMovie = (Movie)combobox_movie.SelectedItem;
-
-            if (chosenMovie != null)
+            if (combobox_movie.SelectedItem is Movie chosenMovie)
             {
                 chosenMovie.MovieName = textedit_movie_name.Text;
                 chosenMovie.Genre = textedit_genre.Text;

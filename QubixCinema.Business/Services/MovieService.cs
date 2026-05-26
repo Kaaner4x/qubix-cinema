@@ -1,13 +1,13 @@
-﻿using QubixCinema.Entities.Models;
+using QubixCinema.DataAccess;
+using QubixCinema.Entities.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace QubixCinema.DataAccess.Services
+namespace QubixCinema.Business.Services
 {
     public class MovieService
     {
         private readonly QubixCinemaContext _context;
-
 
         public MovieService(QubixCinemaContext context)
         {
@@ -52,7 +52,5 @@ namespace QubixCinema.DataAccess.Services
                 _context.SaveChanges();
             }
         }
-
-
     }
 }

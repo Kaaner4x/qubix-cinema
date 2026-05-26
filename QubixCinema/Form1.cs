@@ -1,5 +1,6 @@
-﻿using QubixCinema.DataAccess;
-using QubixCinema.DataAccess.Services;
+using QubixCinema.DataAccess;
+using QubixCinema.Business.Services;
+using QubixCinema.Forms.CustomerForms;
 using QubixCinema.Forms.MovieForms;
 using System;
 using System.Data.Entity;
@@ -8,11 +9,8 @@ namespace QubixCinema
 {
     public partial class Form1 : DevExpress.XtraEditors.XtraForm
     {
-        private readonly MovieService _movieService;
-
         public Form1()
         {
-            _movieService = new MovieService(new QubixCinemaContext());
             InitializeComponent();
         }
 
@@ -54,6 +52,34 @@ namespace QubixCinema
             DeleteMovie dm = new DeleteMovie();
             dm.MdiParent = this;
             dm.Show();
+        }
+
+        private void bar_button_list_customers_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CustomerList cl = new CustomerList();
+            cl.MdiParent = this;
+            cl.Show();
+        }
+
+        private void bar_button_add_customers_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AddCustomer ac = new AddCustomer();
+            ac.MdiParent = this;
+            ac.Show();
+        }
+
+        private void bar_button_update_customers_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            UpdateCustomer uc = new UpdateCustomer();
+            uc.MdiParent = this;
+            uc.Show();
+        }
+
+        private void bar_button_delete_customers_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DeleteCustomer dc = new DeleteCustomer();
+            dc.MdiParent = this;
+            dc.Show();
         }
     }
 }

@@ -184,7 +184,7 @@
             this.Controls.Add(this.textedit_movie_name);
             this.Controls.Add(this.label_movie_name);
             this.Name = "UpdateMovie";
-            this.Text = " ";
+            this.Text = " Update a movie";
             this.Load += new System.EventHandler(this.UpdateMovie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textedit_genre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textedit_movie_name.Properties)).EndInit();

@@ -51,12 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CustomerService.cs" />
+    <Compile Include="Services\MovieService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QubixCinema.DataAccess\QubixCinema.DataAccess.csproj">
+      <Project>{0891B2BF-9A09-4ADA-A491-4720972C7DAB}</Project>
+      <Name>QubixCinema.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QubixCinema.Entities\QubixCinema.Entities.csproj">
+      <Project>{6999D49E-59B7-49C6-BC45-31E562DE5EAC}</Project>
+      <Name>QubixCinema.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -1,5 +1,5 @@
-﻿using DevExpress.XtraEditors;
-using QubixCinema.DataAccess.Services;
+using DevExpress.XtraEditors;
+using QubixCinema.Business.Services;
 using QubixCinema.Entities.Models;
 using System;
 using System.Windows.Forms;
@@ -13,13 +13,17 @@ namespace QubixCinema.Forms.MovieForms
         public AddMovie()
         {
             InitializeComponent();
-            _movieService = new MovieService(new DataAccess.QubixCinemaContext());
+            numeric_runtime.Maximum = 1000;
         }
 
         private void button_add_Click(object sender, System.EventArgs e)
         {
             try
             {
+                if (_movieService == null)
+                {
+                    _movieService = new MovieService(new DataAccess.QubixCinemaContext());
+                }
                 var newMovie = new Movie
                 {
                     MovieName = textedit_movie_name.Text,

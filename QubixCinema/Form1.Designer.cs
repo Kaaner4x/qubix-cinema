@@ -233,6 +233,7 @@
             toolTipItem8.Text = "Lists all the customers";
             superToolTip8.Items.Add(toolTipItem8);
             this.bar_button_list_customers.SuperTip = superToolTip8;
+            this.bar_button_list_customers.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_list_customers_ItemClick);
             // 
             // bar_button_add_customers
             // 
@@ -247,6 +248,7 @@
             toolTipItem9.Text = "You can add a new customer";
             superToolTip9.Items.Add(toolTipItem9);
             this.bar_button_add_customers.SuperTip = superToolTip9;
+            this.bar_button_add_customers.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_add_customers_ItemClick);
             // 
             // bar_button_update_customers
             // 
@@ -261,6 +263,7 @@
             toolTipItem10.Text = "You can edit a customer";
             superToolTip10.Items.Add(toolTipItem10);
             this.bar_button_update_customers.SuperTip = superToolTip10;
+            this.bar_button_update_customers.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_update_customers_ItemClick);
             // 
             // bar_button_delete_customers
             // 
@@ -275,6 +278,7 @@
             toolTipItem11.Text = "You can delete a customer";
             superToolTip11.Items.Add(toolTipItem11);
             this.bar_button_delete_customers.SuperTip = superToolTip11;
+            this.bar_button_delete_customers.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_delete_customers_ItemClick);
             // 
             // bar_button_view_seats
             // 

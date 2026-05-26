@@ -1,5 +1,5 @@
-﻿using QubixCinema.DataAccess;
-using QubixCinema.DataAccess.Services;
+using QubixCinema.DataAccess;
+using QubixCinema.Business.Services;
 using QubixCinema.Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -9,17 +9,24 @@ namespace QubixCinema
 {
     public partial class MovieList : Form
     {
-        private readonly MovieService _movieService;
+        private MovieService _movieService;
 
         public MovieList()
         {
-            _movieService = new MovieService(new QubixCinemaContext());
             InitializeComponent();
         }
 
         private void MovieList_Load(object sender, EventArgs e)
         {
-            LoadMovies();
+            try
+            {
+                _movieService = new MovieService(new QubixCinemaContext());
+                LoadMovies();
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show($"Load Error: {ex.ToString()}");
+            }
         }
 
         private void LoadMovies()
