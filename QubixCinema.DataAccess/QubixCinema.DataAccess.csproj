@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseSeeder.cs" />
     <Compile Include="Mappings\CustomerMap.cs" />
     <Compile Include="Mappings\MovieMap.cs" />
     <Compile Include="Mappings\RegisterMap.cs" />

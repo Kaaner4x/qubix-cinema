@@ -3,6 +3,7 @@ using QubixCinema.Business.Services;
 using QubixCinema.Entities.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace QubixCinema
@@ -34,7 +35,24 @@ namespace QubixCinema
             try
             {
                 List<Movie> movies = _movieService.GetAllMovies();
-                grid_movies.DataSource = movies;
+                
+                // Hide virtual ICollection relations by projecting to a clean anonymous list
+                var displayList = movies.Select(m => new
+                {
+                    MovieID = m.MovieId,
+                    MovieName = m.MovieName,
+                    Genre = m.Genre,
+                    Runtime = $"{m.Runtime} mins",
+                    ReleaseDate = m.ReleaseDate.ToString("yyyy-MM-dd")
+                }).ToList();
+
+                grid_movies.DataSource = displayList;
+
+                // Auto-fit DevExpress GridView columns
+                if (grid_movies.MainView is DevExpress.XtraGrid.Views.Grid.GridView gridView)
+                {
+                    gridView.BestFitColumns();
+                }
             }
             catch (Exception ex)
             {

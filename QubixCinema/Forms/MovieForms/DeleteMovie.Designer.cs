@@ -1,4 +1,4 @@
-﻿namespace QubixCinema.Forms.MovieForms
+namespace QubixCinema.Forms.MovieForms
 {
     partial class DeleteMovie
     {
@@ -28,21 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grid_movies = new System.Windows.Forms.DataGridView();
+            this.grid_movies = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.grid_movies)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // grid_movies
             // 
-            this.grid_movies.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grid_movies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_movies.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grid_movies.Location = new System.Drawing.Point(0, 0);
+            this.grid_movies.MainView = this.gridView1;
             this.grid_movies.Name = "grid_movies";
-            this.grid_movies.ReadOnly = true;
             this.grid_movies.Size = new System.Drawing.Size(1050, 450);
             this.grid_movies.TabIndex = 0;
-            this.grid_movies.DoubleClick += new System.EventHandler(this.grid_movies_DoubleClick);
+            this.grid_movies.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.grid_movies;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
+            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
             // DeleteMovie
             // 
@@ -51,15 +59,17 @@
             this.ClientSize = new System.Drawing.Size(1050, 450);
             this.Controls.Add(this.grid_movies);
             this.Name = "DeleteMovie";
-            this.Text = "Delete a movie";
+            this.Text = "Delete Movie Registry (Double Click to Delete)";
             this.Load += new System.EventHandler(this.DeleteMovie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid_movies)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView grid_movies;
+        private DevExpress.XtraGrid.GridControl grid_movies;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }

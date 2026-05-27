@@ -10,7 +10,8 @@ namespace QubixCinema.Forms.MovieForms
 {
     public partial class DeleteMovie : Form
     {
-        private MovieService _movieService;
+        private readonly MovieService _movieService;
+
         public DeleteMovie()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace QubixCinema.Forms.MovieForms
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show($"Load Error: {ex.ToString()}");
+                XtraMessageBox.Show($"Load Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -34,30 +35,52 @@ namespace QubixCinema.Forms.MovieForms
             try
             {
                 List<Movie> movies = _movieService.GetAllMovies();
-                grid_movies.DataSource = movies;
+                
+                // Hide EF virtual relations by projecting to a clean anonymous list
+                var displayList = System.Linq.Enumerable.ToList(
+                    System.Linq.Enumerable.Select(movies, m => new
+                    {
+                        MovieID = m.MovieId,
+                        MovieName = m.MovieName,
+                        Genre = m.Genre,
+                        Runtime = $"{m.Runtime} mins",
+                        ReleaseDate = m.ReleaseDate.ToString("yyyy-MM-dd")
+                    })
+                );
+
+                grid_movies.DataSource = displayList;
+                gridView1.BestFitColumns();
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show($"Error: {ex.Message}");
-                throw;
+                XtraMessageBox.Show($"Error loading movies: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void grid_movies_DoubleClick(object sender, EventArgs e)
+        private void gridView1_DoubleClick(object sender, EventArgs e)
         {
-            if (grid_movies.CurrentRow?.DataBoundItem is Movie chosenMovie)
+            object movieIdObj = gridView1.GetFocusedRowCellValue("MovieID");
+            if (movieIdObj != null && movieIdObj != DBNull.Value)
             {
-                int movie = chosenMovie.MovieId;
+                int movieId = Convert.ToInt32(movieIdObj);
+                string movieName = Convert.ToString(gridView1.GetFocusedRowCellValue("MovieName"));
 
-                DialogResult result = XtraMessageBox.Show("Are you sure you want to delete the selected movie?",
-                     "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = XtraMessageBox.Show($"Are you sure you want to delete the movie: '{movieName}'?",
+                     "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
-                    _movieService.DeleteMovie(movie);
-                    LoadMovies();
-                    XtraMessageBox.Show("The movie has been successfully removed",
-                    "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    try
+                    {
+                        _movieService.DeleteMovie(movieId);
+                        LoadMovies();
+                        XtraMessageBox.Show("The movie has been successfully removed.",
+                            "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        XtraMessageBox.Show($"Failed to delete movie: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }

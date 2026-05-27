@@ -1,4 +1,4 @@
-﻿namespace QubixCinema
+namespace QubixCinema
 {
     partial class Form1
     {
@@ -191,6 +191,7 @@
             toolTipItem5.Text = "You can review all reports related to cash register transactions";
             superToolTip5.Items.Add(toolTipItem5);
             this.bar_button_reports.SuperTip = superToolTip5;
+            this.bar_button_reports.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_reports_ItemClick);
             // 
             // bar_button_take_payment
             // 
@@ -205,6 +206,7 @@
             toolTipItem6.Text = "You can collect the amount the customer owes";
             superToolTip6.Items.Add(toolTipItem6);
             this.bar_button_take_payment.SuperTip = superToolTip6;
+            this.bar_button_take_payment.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_take_payment_ItemClick);
             // 
             // bar_button_close_day
             // 
@@ -219,6 +221,7 @@
             toolTipItem7.Text = "You can close the day";
             superToolTip7.Items.Add(toolTipItem7);
             this.bar_button_close_day.SuperTip = superToolTip7;
+            this.bar_button_close_day.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_close_day_ItemClick);
             // 
             // bar_button_list_customers
             // 
@@ -293,6 +296,7 @@
             toolTipItem12.Text = "You can check the current seats";
             superToolTip12.Items.Add(toolTipItem12);
             this.bar_button_view_seats.SuperTip = superToolTip12;
+            this.bar_button_view_seats.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_view_seats_ItemClick);
             // 
             // bar_button_book_seat
             // 
@@ -307,6 +311,7 @@
             toolTipItem13.Text = "You can make a new reservation";
             superToolTip13.Items.Add(toolTipItem13);
             this.bar_button_book_seat.SuperTip = superToolTip13;
+            this.bar_button_book_seat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_button_book_seat_ItemClick);
             // 
             // ribbon_page_movies
             // 

@@ -1,4 +1,4 @@
-﻿using DevExpress.XtraEditors;
+using DevExpress.XtraEditors;
 using QubixCinema.Business.Services;
 using QubixCinema.DataAccess;
 using QubixCinema.Entities.Models;
@@ -10,15 +10,15 @@ namespace QubixCinema.Forms.CustomerForms
 {
     public partial class DeleteCustomer : Form
     {
-        private CustomerService _customerService;
+        private readonly CustomerService _customerService;
+
         public DeleteCustomer()
         {
             InitializeComponent();
             _customerService = new CustomerService(new QubixCinemaContext());
-
         }
 
-        private void DeleteCustomer_Load(object sender, System.EventArgs e)
+        private void DeleteCustomer_Load(object sender, EventArgs e)
         {
             try
             {
@@ -26,7 +26,7 @@ namespace QubixCinema.Forms.CustomerForms
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show($"Load Error: {ex.ToString()}");
+                XtraMessageBox.Show($"Load Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -35,30 +35,53 @@ namespace QubixCinema.Forms.CustomerForms
             try
             {
                 List<Customer> customers = _customerService.GetAllCustomers();
-                grid_customers.DataSource = customers;
+                
+                // Hide EF virtual relations by projecting to a clean anonymous list
+                var displayList = System.Linq.Enumerable.ToList(
+                    System.Linq.Enumerable.Select(customers, c => new
+                    {
+                        CustomerID = c.CustomerId,
+                        FirstName = c.CustomerFirstName,
+                        LastName = c.CustomerLastName,
+                        Phone = c.PhoneNumber,
+                        Email = c.Email
+                    })
+                );
+
+                grid_customers.DataSource = displayList;
+                gridView1.BestFitColumns();
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show($"Error: {ex.Message}");
-                throw;
+                XtraMessageBox.Show($"Error loading customers: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void grid_customers_DoubleClick(object sender, EventArgs e)
+        private void gridView1_DoubleClick(object sender, EventArgs e)
         {
-            if (grid_customers.CurrentRow?.DataBoundItem is Customer chosenCustomer)
+            object customerIdObj = gridView1.GetFocusedRowCellValue("CustomerID");
+            if (customerIdObj != null && customerIdObj != DBNull.Value)
             {
-                int customer = chosenCustomer.CustomerId;
+                int customerId = Convert.ToInt32(customerIdObj);
+                string firstName = Convert.ToString(gridView1.GetFocusedRowCellValue("FirstName"));
+                string lastName = Convert.ToString(gridView1.GetFocusedRowCellValue("LastName"));
 
-                DialogResult result = XtraMessageBox.Show("Are you sure you want to delete the selected customer?",
-                     "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = XtraMessageBox.Show($"Are you sure you want to delete customer {firstName} {lastName}?",
+                     "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
-                    _customerService.DeleteCustomer(customer);
-                    LoadCustomers();
-                    XtraMessageBox.Show("The customer has been successfully removed",
-                    "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    try
+                    {
+                        _customerService.DeleteCustomer(customerId);
+                        LoadCustomers();
+                        XtraMessageBox.Show("The customer has been successfully removed.",
+                            "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        XtraMessageBox.Show($"Failed to delete customer: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }

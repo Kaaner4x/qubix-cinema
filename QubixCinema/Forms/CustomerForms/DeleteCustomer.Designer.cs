@@ -1,4 +1,4 @@
-﻿namespace QubixCinema.Forms.CustomerForms
+namespace QubixCinema.Forms.CustomerForms
 {
     partial class DeleteCustomer
     {
@@ -28,21 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grid_customers = new System.Windows.Forms.DataGridView();
+            this.grid_customers = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.grid_customers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // grid_customers
             // 
-            this.grid_customers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grid_customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_customers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grid_customers.Location = new System.Drawing.Point(0, 0);
+            this.grid_customers.MainView = this.gridView1;
             this.grid_customers.Name = "grid_customers";
-            this.grid_customers.ReadOnly = true;
             this.grid_customers.Size = new System.Drawing.Size(1050, 450);
             this.grid_customers.TabIndex = 1;
-            this.grid_customers.DoubleClick += new System.EventHandler(this.grid_customers_DoubleClick);
+            this.grid_customers.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.grid_customers;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
+            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
             // DeleteCustomer
             // 
@@ -51,15 +59,17 @@
             this.ClientSize = new System.Drawing.Size(1050, 450);
             this.Controls.Add(this.grid_customers);
             this.Name = "DeleteCustomer";
-            this.Text = "DeleteCustomer";
+            this.Text = "Delete Customer Registry (Double Click to Delete)";
             this.Load += new System.EventHandler(this.DeleteCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid_customers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView grid_customers;
+        private DevExpress.XtraGrid.GridControl grid_customers;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }
